@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "file": "styles.css",
+  "sources": ["..\/sass\/styles.scss","..\/sass\/_variables.scss","..\/sass\/_mixins.scss","..\/sass\/_base.scss","..\/sass\/_layout.scss","..\/sass\/_modules.scss"],
+  "names": [],
+  "mappings": ";AGAA;EACE,YAAY"
+}
