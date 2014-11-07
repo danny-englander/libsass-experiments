@@ -1,6 +1,15 @@
+/**
+* Imports
+*/
+/* line 2, /Users/danny/Sites/experiments/retrofilms/node_modules/node-neat/assets/stylesheets/grid/grid */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* line 1, /Users/danny/Sites/experiments/retrofilms/sass/base */
 body {
-  background: #333; }
+  background: #ccc; }
 
 /* line 5, /Users/danny/Sites/experiments/retrofilms/sass/base */
 .foo {
