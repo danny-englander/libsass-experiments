@@ -3,5 +3,5 @@ body {
 }
 
 .foo {
- @include linear-gradient(to top, red, orange);
+ @include linear-gradient(to top, #ccc, orange);
 }

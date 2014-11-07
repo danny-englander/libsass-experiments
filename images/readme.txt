@@ -1,1 +1,1 @@
-Images folder
+Images folder - add any images in this folder.
