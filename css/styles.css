@@ -13,8 +13,8 @@ body {
 
 /* line 5, /Users/danny/Sites/experiments/retrofilms/sass/base */
 .foo {
-  background-color: #cc1;
-  background-image: -webkit-linear-gradient(bottom, #cc1, orange);
-  background-image: linear-gradient(to top,#cc1, orange); }
+  background-color: #cc2;
+  background-image: -webkit-linear-gradient(bottom, #cc2, orange);
+  background-image: linear-gradient(to top,#cc2, orange); }
 
 /*# sourceMappingURL=styles.css.map */

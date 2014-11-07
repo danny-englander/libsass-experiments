@@ -1,5 +1,12 @@
-node_modules
-*.idea
+# OS X
 *.DS_Store
+
+# Node mods
+node_modules
+
+# PHPStorm
+*.idea
+
+# Sass Maps
 *.map
 
