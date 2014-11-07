@@ -1,3 +1,7 @@
 body {
   background: #333;
 }
+
+.foo {
+ @include linear-gradient(to top, red, orange);
+}
