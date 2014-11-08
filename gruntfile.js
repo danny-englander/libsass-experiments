@@ -19,7 +19,8 @@ module.exports = function (grunt) {
         options: {
           includePaths: require('node-neat').includePaths,
           sourceMap: true,
-          outputStyle: 'expanded'
+          outputStyle: 'expanded',
+          sourceComments: 'none'
         },
         files: {
           'css/styles.css': 'sass/styles.scss'

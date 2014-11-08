@@ -4,4 +4,15 @@ body {
 
 .foo {
  @include linear-gradient(to top, #cc2, orange);
+
+}
+
+
+
+// @each loop for each color in the palette.
+@each $color in map-keys($palette) {
+  $hexvar: map-get($palette, $color);
+  li.cp-#{$color} {
+    background-color: $hexvar;
+  }
 }

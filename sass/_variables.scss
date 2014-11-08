@@ -1,16 +1,28 @@
-$lightgray      : #819090;
-$gray           : #708284;
-$mediumgray     : #536870;
-$darkgray       : #475B62;
-$darkblue       : #0A2933;
-$darkerblue     : #042029;
-$paleryellow    : #FCF4DC;
-$paleyellow     : #EAE3CB;
-$yellow         : #A57706;
-$orange         : #BD3613;
-$red            : #D11C24;
-$pink           : #C61C6F;
-$purple         : #595AB7;
-$blue           : #2176C7;
-$cyan           : #259286;
-$green          : #738A05;
+// Color vars.
+$white: white;
+$medium_gray: #999999;
+$sea_green: #16a085;
+$pomegranate: #c0392b;
+$orange: #e04604;
+$orange_hover: #e04604;
+$olive_green: #6a8500;
+$pink: #b72898;
+$purple: #491f70;
+$purple_light: #b58dd9;
+$purple_accent: #7629bd;
+$turquoise: #02b4ce;
+$turquoise_hover: #02C9E3;
+$green_gray: #7f8c8d;
+$mustard: #c3a918;
+$maroon: #851b1d;
+$britered: #ef262b;
+$surf-green: #02aab3;
+$maillot-jaune: #f0de16;
+$caribe: #a6c9d1;
+$chartreuse: #c8dc77;
+
+// Define the palettes.
+$palette: ("greengray": $green_gray, "pink": $pink, "orange": $orange, "green": $olive_green,
+        "purple": $purple, "turquoise": $turquoise, "pomegranate": $pomegranate, "seafoam": $sea_green,
+        "mustard": $mustard, "surf-green": $surf-green,  "maillot-jaune": $maillot-jaune,
+        "caribe": $caribe, "chartreuse": $chartreuse);
