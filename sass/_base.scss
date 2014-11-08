@@ -9,3 +9,16 @@ body {
     background-color: $hexvar;
   }
 }
+
+ul.theme-colors {
+  li {
+    font-weight: bold;
+    color: $white;
+    padding: 10px;
+    margin: 0 0 1% 0;
+    overflow: hidden;
+    &.dark {
+      color: darken($medium_gray, 30%);
+    }
+  }
+}

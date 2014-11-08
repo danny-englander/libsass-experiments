@@ -24,5 +24,8 @@ $chartreuse: #c8dc77;
 // Define the palettes.
 $palette: ("greengray": $green_gray, "pink": $pink, "orange": $orange, "green": $olive_green,
         "purple": $purple, "turquoise": $turquoise, "pomegranate": $pomegranate, "seafoam": $sea_green,
-        "mustard": $mustard, "surf-green": $surf-green,  "maillot-jaune": $maillot-jaune,
+        "mustard": $mustard, "surf-green": $surf-green, "maillot-jaune": $maillot-jaune,
         "caribe": $caribe, "chartreuse": $chartreuse);
+
+$mobile: new-breakpoint(max-width 767px);
+$tab: new-breakpoint(min-width 768px);

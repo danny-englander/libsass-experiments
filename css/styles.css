@@ -271,24 +271,47 @@ li.cp-caribe {
 li.cp-chartreuse {
   background-color: #c8dc77; }
 
-.l-primary {
+ul.theme-colors li {
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  margin: 0 0 1% 0;
+  overflow: hidden; }
+  ul.theme-colors li.dark {
+    color: #4d4d4d; }
+
+.l-container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .l-primary:after {
+  .l-container:after {
     content: "";
     display: table;
     clear: both; }
-  .l-primary .theme-colors li {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 31.7615656014%; }
-    .l-primary .theme-colors li:last-child {
-      margin-right: 0; }
-    .l-primary .theme-colors li:nth-child(3n) {
-      margin-right: 0; }
-    .l-primary .theme-colors li:nth-child(3n+1) {
-      clear: left; }
+  @media screen and (min-width: 768px)  {
+    .l-container .theme-colors li {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%; }
+      .l-container .theme-colors li:last-child {
+        margin-right: 0; }
+      .l-container .theme-colors li:nth-child(3n) {
+        margin-right: 0; }
+      .l-container .theme-colors li:nth-child(3n+1) {
+        clear: left; } }
+  @media screen and (max-width: 767px)  {
+    .l-container .theme-colors li {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%;
+      padding: 2%; }
+      .l-container .theme-colors li:last-child {
+        margin-right: 0; }
+      .l-container .theme-colors li:nth-child(2n) {
+        margin-right: 0; }
+      .l-container .theme-colors li:nth-child(2n+1) {
+        clear: left; } }
 
 /*# sourceMappingURL=styles.css.map */

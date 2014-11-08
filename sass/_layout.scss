@@ -1,9 +1,16 @@
 // Layouts
 
-.l-primary {
+.l-container {
   @include outer-container;
   .theme-colors li {
-    @include span-columns(4);
-    @include omega(3n);
+    @include media($tab) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+    @include media($mobile) {
+      @include span-columns(6);
+      @include omega(1n +1);
+      @include pad(2%);
+    }
   }
 }
