@@ -7,7 +7,10 @@
   box-sizing: border-box; }
 
 body {
-  background: #ccc; }
+  background: #fff; }
+
+.l-hero {
+  background-color: #333; }
 
 li.cp-greengray {
   background-color: #7f8c8d; }
@@ -50,7 +53,7 @@ li.cp-chartreuse {
 
 ul.theme-colors li {
   font-weight: bold;
-  color: white;
+  color: #fff;
   padding: 10px;
   margin: 0 0 1% 0;
   overflow: hidden; }
@@ -60,7 +63,11 @@ ul.theme-colors li {
 .l-container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 0;
+  padding-right: 3%;
+  padding-bottom: 0;
+  padding-left: 3%; }
   .l-container:after {
     content: "";
     display: table;

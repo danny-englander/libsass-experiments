@@ -2,6 +2,9 @@
 
 .l-container {
   @include outer-container;
+  @include padding(0 3%);
+  @include media($tab_end) {
+  }
   .theme-colors li {
     @include pad(2%);
     @include media($desk) {
