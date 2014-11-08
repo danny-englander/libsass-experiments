@@ -10,3 +10,5 @@ node_modules
 # Sass Maps
 *.map
 
+# Image sources
+assets
