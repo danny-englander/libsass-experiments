@@ -27,5 +27,12 @@ $palette: ("greengray": $green_gray, "pink": $pink, "orange": $orange, "green": 
         "mustard": $mustard, "surf-green": $surf-green, "maillot-jaune": $maillot-jaune,
         "caribe": $caribe, "chartreuse": $chartreuse);
 
-$mobile: new-breakpoint(max-width 767px);
-$tab: new-breakpoint(min-width 768px);
+//$mobile: new-breakpoint(min-width 768px);
+//$tab: new-breakpoint(max-width 767px);
+//$desktop: new-breakpoint(min-width 768px);
+
+$mobile: new-breakpoint(max-width 767px); // 0 - 767
+$tab: new-breakpoint(768px); // min 768
+$tab_range: new-breakpoint(min-width 768px max-width 1024px); // min max range
+$tab_end: new-breakpoint(max-width 1024px); // max 1024
+$desk: new-breakpoint(min-width 1025px); // 1025 or >

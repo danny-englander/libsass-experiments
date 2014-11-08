@@ -3,14 +3,14 @@
 .l-container {
   @include outer-container;
   .theme-colors li {
-    @include media($tab) {
+    @include pad(2%);
+    @include media($desk) {
       @include span-columns(4);
       @include omega(3n);
     }
-    @include media($mobile) {
+    @include media($tab_range) {
       @include span-columns(6);
-      @include omega(1n +1);
-      @include pad(2%);
+      @include omega(2n);
     }
   }
 }

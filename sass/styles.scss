@@ -1,11 +1,8 @@
 /**
 * Imports
 */
-
 @import "../node_modules/node-bourbon/assets/stylesheets/bourbon";
 @import "../node_modules/node-neat/assets/stylesheets/neat";
-// TODO - break off bitters into its own scss file
-@import "../node_modules/node-neat/assets/stylesheets/bitters/bitters";
 @import "variables";
 @import "mixins";
 @import "base";

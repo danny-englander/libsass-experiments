@@ -23,6 +23,7 @@ module.exports = function (grunt) {
           sourceComments: 'none'
         },
         files: {
+          'css/normalize.css': 'sass/normalize.scss',
           'css/styles.css': 'sass/styles.scss'
         } //files
       } //dist
