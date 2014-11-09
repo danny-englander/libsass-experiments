@@ -1,8 +1,13 @@
 // Layouts
 
+.panel-wrap {
+  background-color: $white;
+}
+
+// Main layout.
 .l-container {
   @include outer-container;
-  @include padding(0 3%);
+  @include pad(0 3%);
   @include media($tab_end) {
   }
   .theme-colors li {
@@ -16,4 +21,57 @@
       @include omega(2n);
     }
   }
+  &.primary {
+    @include pad(20px 3%);
+  }
 }
+
+// Social links.
+.l-social li {
+  display: inline-block;
+  a {
+    display: block;
+    color: $white;
+    @include margin(0 10px 0 0);
+    @include pad(6px);
+  }
+}
+
+// Nav.
+
+.l-navigation.panel {
+  background: $light-gray;
+}
+
+ul.nav {
+  margin: 0;
+  @include pad(10px 0);
+  li {
+    display: inline-block;
+    a {
+    }
+  }
+}
+
+.branding {
+  a {
+    line-height: inherit;
+    img {
+      @include pad(6px 0 0 0);
+      @include media($mobile) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  color: $white;
+  .l-colophon {
+    text-align: center;
+  }
+}
+
+
+
+

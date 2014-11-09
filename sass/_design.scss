@@ -1,0 +1,50 @@
+/**
+* Design
+*/
+
+a {
+  color: $orange;
+  text-decoration: none;
+  &:hover {
+    color: $dark_gray;
+  }
+  footer & {
+    &:hover {
+      color: lighten($light-gray, 4);
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: darken($medium_gray, 20%);
+  margin: 0 auto .4em auto;
+
+}
+
+// Social links.
+.l-social li {
+  a {
+    color: $white;
+    &.twitter {
+      background-color: #00bfff;
+    }
+    &.github {
+      background-color: #4183c4;
+    }
+    &.drupal {
+      background-color: #0077c0;
+    }
+    &.instagram {
+      background-color: #3F729b;
+    }
+    &.gplus {
+      background-color: #d14836;
+    }
+    &:hover {
+      background-color: $dark_gray;
+    }
+  }
+}

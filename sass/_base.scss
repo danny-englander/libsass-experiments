@@ -1,10 +1,13 @@
 
 body {
-  background: #fff;
+  background: $dark_gray;
 }
 
-.l-hero {
+.l-header {
   background-color: $dark_gray;
+  .header {
+    @extend .l-header;
+  }
 }
 
 // @each loop for each color in the palette.

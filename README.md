@@ -1,6 +1,6 @@
-#Retro Films and Color Palettes
+#Retro Photos & Color Palettes
 
-###An experimental project with LibSass that pays homage to classic films, design, and colors
+##A project made with LibSass that experiments with color, design, and photography in the context of Sass, Grunt, Bourbon, and Neat 
 
 This is an experimental project to explore LIbSass, Grunt, Node NPMs, Bourbon, Neat, and more. The reason I started to play around with this is that I want to learn new things and my current Ruby Sass / Compass / Susy setup is getting long in the tooth. Compile times are getting abysmal with large projects. 
 
@@ -33,4 +33,13 @@ Your local top-level directory structure should look something like this if all 
 | |_____variables.scss
 | |____styles.scss
 ```
+
+##@TODO
+
+Here are some ideas that I have for this project going forward
+1. Add Uglify
+2. Add CSS comb, a CSS formatter, or prettifier 
+3. Covert to Jekyll?
+4. Add a photo Gallery
+
 

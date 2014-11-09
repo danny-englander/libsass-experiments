@@ -2,41 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Retro Films</title>
+  <title>Color Palettes Grid</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
+
   <header>
-    <div class="l-hero">
-      <section class="l-container">
+
+    <div class="l-header header-wrap">
+      <div class="l-container header">
         <div class="branding">
           <a href="index.html">
-          <img src="logo.png" alt="Retro Design" title="Retro Design">
+          <img src="logo.png" alt="Color Palettes" title="Color Palettes">
           </a>
         </div><!-- branding -->
-      </section><!-- layout -->
+      </div><!-- layout -->
     </div><!-- hero -->
-    <div class="l-navigation">
-      <section class="l-container">
-        <ul class="nav">
-          <li><a href="#">Films</a></li>
-          <li><a href="#">Palettes</a></li>
-        </ul>
-      </section><!-- layout -->
+
+    <div class="l-navigation panel">
+      <div class="l-container">
+        <div type="button" class="js-menu-trigger sliding-menu-button">
+          <i class="fa fa-align-justify fa-2x"></i>
+        </div>
+        <nav class="js-menu sliding-menu-content">
+          <ul>
+            <li><a href="javascript:void(0)">Color Palettes</a></li>
+            <li><a href="javascript:void(0)">Photo Gallery</a></li>
+          </ul>
+        </nav>
+        <div class="js-menu-screen menu-screen"></div>
+      </div><!-- layout -->
     </div><!-- navigation -->
+
   </header><!-- header -->
 
-  <section class="palettes">
+  <div class="palettes panel-wrap">
     <div class="primary l-container">
-      <article id="color-grid">
-        <h1>Color Palettes</h1>
-        <p>Foobar</p>
+      <h4>A project made with LibSass that experiments with color, design, and photography in the context of Sass, Grunt, Bourbon, and Neat </h4>
+      <section id="color-grid">
+        <h2>Color Palettes Grid</h2>
         <div class="l-palettes">
-          <p>A demo of the Sass @each directive loop for theme color palettes using Neat.</p>
+          <p>A demo of the Sass @each directive loop for theme color palettes using Bourbon and Neat.</p>
           <ul class="theme-colors">
             <li class="cp-turquoise"><span>Turquoise</span></li>
             <li class="cp-purple"><span>Purple</span></li>
@@ -53,25 +64,32 @@
             <li class="cp-chartreuse dark"><span>Chartreuse (dark)</span></li>
           </ul>
         </div>
-      </article><!-- Featured Artists -->
+      </section><!-- Featured Artists -->
     </div><!-- primary -->
-
-  </section><!-- layout -->
+  </div><!-- layout -->
 
   <footer>
-    <section class="layout l-container">
-      <div class="socialmediaicons">
-        <span class="title">Connect</span>
+    <div class="l-container">
+      <section class="l-social">
+        <h2>Connect</h2>
         <ul>
-          <li><a href="http://twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>
-          <li><a href="http://facebook.com"><i class="fa fa-camera-retro fa-2x"></i></a></li>
-          <li><a href="http://meetup.com"><i class="fa fa-camera-retro fa-2x"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/Danny_Englander"><i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a class="github" a href="https://github.com/danny-englander"><i class="fa fa-github fa-2x"></i></a></li>
+          <li><a class="drupal" href="https://www.drupal.org/u/danny-englander"><i class="fa fa-drupal fa-2x"></i></a></li>
+          <li><a class="instagram" href="http://instagram.com/dannyenglander11"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a class="gplus" href="https://plus.google.com/+DannyEnglander/posts"><i class="fa fa-google-plus fa-2x"></i></a></li>
         </ul>
-      </div><!-- socialmediaicons -->
-    </section><!-- layout -->
+      </section><!-- l-social -->
+
+      <div class="l-colophon">
+        <p>Color Palettes Grid created by Danny Englander</p>
+        <p>Code <a href="http://opensource.org/licenses/mit-license.html">licensed under MIT</a></p>
+      </div>
+
+    </div><!-- l-container -->
   </footer><!-- footer -->
 
-  <!--<script src="js/script.js"></script>-->
+  <script src="js/script.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
