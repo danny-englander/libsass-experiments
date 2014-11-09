@@ -11,7 +11,9 @@ module.exports = function (grunt) {
       }, //sass
       livereload: {
         files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css', 'img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
-        options: { livereload: true }
+        options: {
+          livereload: true
+        }
       } // livereload
     }, //watch
     sass: {
@@ -19,7 +21,7 @@ module.exports = function (grunt) {
         options: {
           includePaths: require('node-neat').includePaths,
           sourceMap: true,
-          outputStyle: 'expanded',
+          outputStyle: 'compressed',
           sourceComments: 'none'
         },
         files: {

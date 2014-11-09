@@ -46,4 +46,3 @@ Here are some ideas that I have for this project going forward.
 3. Covert to Jekyll?
 4. Add photo gallery
 
-
