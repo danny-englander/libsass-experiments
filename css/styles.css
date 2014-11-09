@@ -89,60 +89,6 @@ cite {
   cite:before {
     content: '\2014 \00A0'; }
 
-body {
-  background: #333; }
-
-.l-header, .l-header .header {
-  background-color: #333; }
-
-li.cp-greengray {
-  background-color: #7f8c8d; }
-
-li.cp-pink {
-  background-color: #b72898; }
-
-li.cp-orange {
-  background-color: #e04604; }
-
-li.cp-green {
-  background-color: #6a8500; }
-
-li.cp-purple {
-  background-color: #491f70; }
-
-li.cp-turquoise {
-  background-color: #02b4ce; }
-
-li.cp-pomegranate {
-  background-color: #c0392b; }
-
-li.cp-seafoam {
-  background-color: #16a085; }
-
-li.cp-mustard {
-  background-color: #c3a918; }
-
-li.cp-surf-green {
-  background-color: #02aab3; }
-
-li.cp-maillot-jaune {
-  background-color: #f0de16; }
-
-li.cp-caribe {
-  background-color: #a6c9d1; }
-
-li.cp-chartreuse {
-  background-color: #c8dc77; }
-
-ul.theme-colors li {
-  font-weight: bold;
-  color: #fff;
-  padding: 10px;
-  margin: 0 0 1% 0;
-  overflow: hidden; }
-  ul.theme-colors li.dark {
-    color: #4d4d4d; }
-
 .panel-wrap {
   background-color: #fff; }
 
@@ -220,6 +166,60 @@ footer {
 /**
 * Design
 */
+body {
+  background: #333; }
+
+.l-header, .l-header .header {
+  background-color: #333; }
+
+li.cp-greengray {
+  background-color: #7f8c8d; }
+
+li.cp-pink {
+  background-color: #b72898; }
+
+li.cp-orange {
+  background-color: #e04604; }
+
+li.cp-green {
+  background-color: #6a8500; }
+
+li.cp-purple {
+  background-color: #491f70; }
+
+li.cp-turquoise {
+  background-color: #02b4ce; }
+
+li.cp-pomegranate {
+  background-color: #c0392b; }
+
+li.cp-seafoam {
+  background-color: #16a085; }
+
+li.cp-mustard {
+  background-color: #c3a918; }
+
+li.cp-surf-green {
+  background-color: #02aab3; }
+
+li.cp-maillot-jaune {
+  background-color: #f0de16; }
+
+li.cp-caribe {
+  background-color: #a6c9d1; }
+
+li.cp-chartreuse {
+  background-color: #c8dc77; }
+
+ul.theme-colors li {
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  margin: 0 0 1% 0;
+  overflow: hidden; }
+  ul.theme-colors li.dark {
+    color: #4d4d4d; }
+
 a {
   color: #e04604;
   text-decoration: none; }

@@ -2,6 +2,39 @@
 * Design
 */
 
+
+body {
+  background: $dark_gray;
+}
+
+.l-header {
+  background-color: $dark_gray;
+  .header {
+    @extend .l-header;
+  }
+}
+
+// @each loop for each color in the palette.
+@each $color in map-keys($palette) {
+  $hexvar: map-get($palette, $color);
+  li.cp-#{$color} {
+    background-color: $hexvar;
+  }
+}
+
+ul.theme-colors {
+  li {
+    font-weight: bold;
+    color: $white;
+    padding: 10px;
+    margin: 0 0 1% 0;
+    overflow: hidden;
+    &.dark {
+      color: darken($medium_gray, 30%);
+    }
+  }
+}
+
 a {
   color: $orange;
   text-decoration: none;
