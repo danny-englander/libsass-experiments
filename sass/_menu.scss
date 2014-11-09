@@ -5,10 +5,7 @@
   position: relative;
   outline: none;
   @include pad(10px 0);
-
-  img {
-    height: 1.3em;
-  }
+  float: right;
 }
 
 .sliding-menu-content {

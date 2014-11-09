@@ -1,6 +1,6 @@
-#Retro Photos & Color Palettes
+#A LibSass experiment with color, design, and photography
 
-##A project made with LibSass that experiments with color, design, and photography in the context of Sass, Grunt, Bourbon, and Neat 
+##A project made with LibSass that plays with color, design, and photography in the context of Sass, Grunt, Bourbon, and Neat 
 
 This is an experimental project to explore LIbSass, Grunt, Node NPMs, Bourbon, Neat, and more. The reason I started to play around with this is that I want to learn new things and my current Ruby Sass / Compass / Susy setup is getting long in the tooth. Compile times are getting abysmal with large projects. 
 
@@ -26,21 +26,26 @@ Your local top-level directory structure should look something like this if all 
 | |____node-neat
 |____package.json
 |____sass
-| |_____base.scss
-| |_____layout.scss
-| |_____mixins.scss
-| |_____modules.scss
-| |_____variables.scss
+| |_____(partials here...)
 | |____styles.scss
+| |____normalize.scss
 ```
+
+##Node Packaged Modules used
+
+* [grunt-contrib-watch](https://www.npmjs.org/package/grunt-contrib-watch)
+* [grunt-sass](https://www.npmjs.org/package/grunt-sass) (Grunt LibSass compiler)
+* [node-bourbon](https://www.npmjs.org/package/node-bourbon)
+* [node-neat](https://www.npmjs.org/package/node-neat) (Note, for some reason NPM does not bring in bitters, you may need to add in manually. See this [folder structure](https://github.com/wittawasw/node-neat-bitters/tree/master/assets/stylesheets) for more info)
+* This repo also uses a slightly modified version of [normalize.css](http://necolas.github.io/normalize.css/) by Nicolas Gallagher and co-created with Jonathan Neal.
 
 ##@TODO
 
 Here are some ideas that I have for this project going forward.
 
-1. Add Uglify
+1. Add favicon and retina touch icons
 2. Add CSS comb, a CSS formatter, or prettifier 
 3. Covert to Jekyll?
-4. Add a photo Gallery
+4. Add photo gallery
 
 
