@@ -36,7 +36,8 @@ Your local top-level directory structure should look something like this if all 
 
 ##@TODO
 
-Here are some ideas that I have for this project going forward
+Here are some ideas that I have for this project going forward.
+
 1. Add Uglify
 2. Add CSS comb, a CSS formatter, or prettifier 
 3. Covert to Jekyll?
