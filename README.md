@@ -1,5 +1,3 @@
-#A LibSass experiment with color, design, and photography
-
 ##A project made with LibSass that plays with color, design, and photography in the context of Sass, Grunt, Bourbon, and Neat 
 
 This is an experimental project to explore LIbSass, Grunt, Node NPMs, Bourbon, Neat, and more. The reason I started to play around with this is that I want to learn new things and my current Ruby Sass / Compass / Susy setup is getting long in the tooth. Compile times are getting abysmal with large projects. 
