@@ -2,6 +2,9 @@
 
 .panel-wrap {
   background-color: $white;
+  &.l-main {
+    margin-bottom: 20px;
+  }
 }
 
 // Main layout.
@@ -65,13 +68,9 @@ ul.nav {
   }
 }
 
-footer {
+.l-footer {
   color: $white;
   .l-colophon {
     text-align: center;
   }
 }
-
-
-
-

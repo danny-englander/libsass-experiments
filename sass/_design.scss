@@ -41,7 +41,7 @@ a {
   &:hover {
     color: $dark_gray;
   }
-  footer & {
+  .l-footer & {
     &:hover {
       color: lighten($light-gray, 4);
     }
@@ -54,8 +54,11 @@ h3,
 h4 {
   color: darken($medium_gray, 20%);
   margin: 0 auto .4em auto;
-
+  .l-footer & {
+    color: lighten($medium_gray, 20%);
+  }
 }
+
 
 // Social links.
 .l-social li {
