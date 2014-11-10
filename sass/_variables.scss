@@ -1,6 +1,7 @@
 // Color vars.
 $white: #fff;
 $dark_gray: #333;
+$light-gray: #ccc;
 $medium_gray: #999;
 $sea_green: #16a085;
 $pomegranate: #c0392b;
@@ -28,21 +29,21 @@ $palette: ("greengray": $green_gray, "pink": $pink, "orange": $orange, "green": 
         "mustard": $mustard, "surf-green": $surf-green, "maillot-jaune": $maillot-jaune,
         "caribe": $caribe, "chartreuse": $chartreuse);
 
-//$mobile: new-breakpoint(min-width 768px);
-//$tab: new-breakpoint(max-width 767px);
-//$desktop: new-breakpoint(min-width 768px);
-
+// Neat Breakpoints.
 $mobile: new-breakpoint(max-width 767px); // 0 - 767
 $tab: new-breakpoint(768px); // min 768
 $tab_range: new-breakpoint(min-width 768px max-width 1024px); // min max range
 $tab_end: new-breakpoint(max-width 1024px); // max 1024
 $desk: new-breakpoint(min-width 1025px); // 1025 or >
 
-// Menu
-
+// Menu.
 $sliding-menu-border-color: $dark-gray;
 $sliding-menu-background: lighten($sliding-menu-border-color, 5);
 $sliding-menu-color: #fff;
 $sliding-menu-border: 1px solid $sliding-menu-border-color;
 $sliding-menu-background-hover: $orange;
 $sliding-menu-color-hover: #fff;
+
+// Base font sizes.
+$base-font-size: 16px;
+$base-line-height: 1.5;

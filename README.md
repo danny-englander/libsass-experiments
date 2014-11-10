@@ -34,7 +34,7 @@ Your local top-level directory structure should look something like this if all 
 * [grunt-contrib-watch](https://www.npmjs.org/package/grunt-contrib-watch)
 * [grunt-sass](https://www.npmjs.org/package/grunt-sass) (Grunt LibSass compiler)
 * [node-bourbon](https://www.npmjs.org/package/node-bourbon)
-* [node-neat](https://www.npmjs.org/package/node-neat) (Note, for some reason NPM does not bring in bitters, you may need to add in manually. See this [folder structure](https://github.com/wittawasw/node-neat-bitters/tree/master/assets/stylesheets) for more info)
+* [node-neat](https://www.npmjs.org/package/node-neat)
 * This repo also uses a slightly modified version of [normalize.css](http://necolas.github.io/normalize.css/) by Nicolas Gallagher and co-created with Jonathan Neal.
 
 ##@TODO
