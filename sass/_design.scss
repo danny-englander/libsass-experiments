@@ -2,7 +2,6 @@
 * Design
 */
 
-
 body {
   background: $dark_gray;
 }
@@ -35,30 +34,37 @@ ul.theme-colors {
   }
 }
 
-a {
-  color: $orange;
+.link {
+  color: $link-color;
   text-decoration: none;
-  &:hover {
-    color: $dark_gray;
+
+  &:visited {
+    color: $link-visited-color;
   }
-  .l-footer & {
-    &:hover {
-      color: lighten($light-gray, 4);
-    }
+
+  &:hover, &:visited:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+.l-footer a {
+  &:hover {
+    color: lighten($light-gray, 4);
   }
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   color: darken($medium_gray, 20%);
-  margin: 0 auto .4em auto;
   .l-footer & {
     color: lighten($medium_gray, 20%);
   }
 }
-
 
 // Social links.
 .l-social li {

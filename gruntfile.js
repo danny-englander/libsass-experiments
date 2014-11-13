@@ -21,7 +21,7 @@ module.exports = function (grunt) {
         options: {
           includePaths: require('node-neat').includePaths,
           sourceMap: true,
-          outputStyle: 'compressed',
+          outputStyle: 'expanded',
           sourceComments: 'none'
         },
         files: {

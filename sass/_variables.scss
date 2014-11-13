@@ -45,5 +45,37 @@ $sliding-menu-background-hover: $orange;
 $sliding-menu-color-hover: #fff;
 
 // Base font sizes.
-$base-font-size: 16px;
-$base-line-height: 1.5;
+//$base-font-size: 16px;
+//$base-line-height: 1.5;
+
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Cardo:400,700,400italic|Open+Sans:300italic,400italic,400,700,300);
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Cardo', serif;
+font-family: 'Source Code Pro', ;
+*/
+
+/*
+ * Variables
+ */
+
+$text-color: #333;
+$quiet-color: #ccc;
+$loud-color: #000;
+$heading-color: #111;
+
+$link-color: $orange;
+$link-hover-color: $dark_gray;
+$link-visited-color: $orange;
+
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 18px;
+$base-font-weight: 300;
+
+$fixed-font-family: 'Source Code Pro', monospace;
+$fixed-font-size: 15px;
+$fixed-line-height: 1.2;
+
+$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-weight: 700;
