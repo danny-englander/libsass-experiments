@@ -2,9 +2,17 @@
 /**
 * Imports
 */
-* {
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+*, *:before, *:after {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
 /*
 font-family: 'Open Sans', sans-serif;
