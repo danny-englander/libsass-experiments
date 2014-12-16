@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="article">
+
+  <div class="meta">
+    <time>
+      {{ page.date | date_to_string }}
+    </time>
+  </div>
+
+  <h2>
+    {{ page.title }}
+  </h2>
+
+  <div class="article-text">
+    {{ content }}
+  </div>
+
+</article>

@@ -1,0 +1,20 @@
+name: Danny Englander
+markdown: redcarpet
+baseurl: ""
+exclude: [
+  .git,
+  .gitignore,
+  .DS_Store,
+  assets,
+  CNAME,
+  svg-icons,
+  svg-decorations,
+  sass,
+  .sass-cache,
+  package.json, 
+  Gruntfile.js, 
+  node_modules, 
+  readme.md
+]
+
+excerpt_separator: <!--more-->

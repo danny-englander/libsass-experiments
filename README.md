@@ -6,9 +6,11 @@ Enter LibSass! It breaks the Ruby Sass bottleneck and compile times with LibSass
 
 1. To get up and running, you'll need [Node.js](http://nodejs.org/) and [Grunt](http://gruntjs.com/) installed locally. 
 
-2. Clone this repo to your local and then run ```npm install```. (Note you may need to preface the command with ```sudo``` depending on your setup.)
+2. F
 
-3. Run ```grunt```, make a few code changes and watch the speed.
+3. Clone this repo to your local and then run ```npm install```. (Note you may need to preface the command with ```sudo``` depending on your setup.)
+
+4. Run ```grunt```, make a few code changes and watch the speed.
 
 Your local top-level directory structure should look something like this if all went well with ```npm install```
 
@@ -36,6 +38,7 @@ Your local top-level directory structure should look something like this if all 
 * [node-bourbon](https://www.npmjs.org/package/node-bourbon)
 * [node-neat](https://www.npmjs.org/package/node-neat)
 * This repo also uses a slightly modified version of [normalize.css](http://necolas.github.io/normalize.css/) by Nicolas Gallagher and co-created with Jonathan Neal.
+* Typography is inspired by and draws from the article, "*[Modular CSS typography](http://thesassway.com/advanced/modular-css-typography)*". 
 
 ##@TODO
 

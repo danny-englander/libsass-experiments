@@ -1,37 +1,71 @@
-module.exports = function (grunt) {
+/* globals module, require */
+
+module.exports = function(grunt) {
+
+  "use strict";
+
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    watch: {
-      options: {
-        includePaths: require('node-neat').includePaths
-      },
-      sass: {
-        files: ['sass/**/*.{scss,sass}', 'sass/_partials/**/*.{scss,sass}'],
-        tasks: ['sass:dist']
-      }, //sass
-      livereload: {
-        files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css', 'img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
-        options: {
-          livereload: true
+    pkg: grunt.file.readJSON("package.json"),
+
+    uglify: {
+      global: {
+        files: {
+          "js/script.min.js": ["js/script.js"]
         }
-      } // livereload
-    }, //watch
+      }
+    },
+
     sass: {
-      dist: {
+      global: {
         options: {
-          includePaths: require('node-neat').includePaths,
-          sourceMap: true,
-          outputStyle: 'expanded',
-          sourceComments: 'none'
+          style: "expanded"
         },
         files: {
-          'css/normalize.css': 'sass/normalize.scss',
-          'css/styles.css': 'sass/styles.scss'
-        } //files
-      } //dist
+          "css/styles-unprefixed.css": "sass/styles.scss"
+        }
+      }
+    },
+
+    autoprefixer: {
+      global: {
+        src: "css/styles-unprefixed.css",
+        dest: "css/styles.css"
+      }
+    },
+
+    shell: {
+      jekyllServe: {
+        command: "jekyll serve --baseurl="
+      },
+      jekyllBuild: {
+        command: "jekyll build --config _config-dev.yml"
+      }
+    },
+
+    watch: {
+      options: {
+        livereload: true
+      },
+      site: {
+     //   files: ["index.html", "writing.html", "about.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
+        files: ['*.html', "typography.html", 'js/**/*.{js,json}', 'css/*.css', "_layouts/*.html", "_includes/*.html", "_posts/*.md", 'img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+        tasks: ["shell:jekyllBuild"]
+      },
+      js: {
+        files: ["js/*.js"],
+        tasks: ["uglify", "shell:jekyllBuild"]
+      },
+      css: {
+        files: ["scss/*.scss"],
+        tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
+      }
     }
+
   });
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default', ['sass:dist', 'watch']);
+
+  require("load-grunt-tasks")(grunt);
+
+  grunt.registerTask("serve", ["shell:jekyllServe"]);
+  grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
+
 };

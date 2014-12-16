@@ -3,6 +3,7 @@
 * Imports
 */
 * {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -301,9 +302,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 220px;
   height: 100%;
   -webkit-transform: translateX(-220px);
+  -moz-transform: translateX(-220px);
   -ms-transform: translateX(-220px);
+  -o-transform: translateX(-220px);
   transform: translateX(-220px);
   -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
   background: #404040;
   z-index: 999999;
@@ -319,7 +323,9 @@ h1, h2, h3, h4, h5, h6 {
       color: #fff; }
   .sliding-menu-content.is-visible {
     -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
+    -o-transform: translateX(0);
     transform: translateX(0); }
 
 .menu-screen {
@@ -329,6 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0px;
   left: 0px;
   -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   background: #333;
   opacity: 0;
