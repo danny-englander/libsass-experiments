@@ -16,4 +16,4 @@ node_modules
 # Image sources
 assets
 
-_site
+#_site
