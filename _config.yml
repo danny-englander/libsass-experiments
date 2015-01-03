@@ -1,6 +1,6 @@
 name: Danny Englander
 markdown: redcarpet
-baseurl: "http://danny-englander.github.io/libsass-experiments"
+baseurl: "/libsass-experiments"
 exclude: [
   .git,
   .gitignore,
