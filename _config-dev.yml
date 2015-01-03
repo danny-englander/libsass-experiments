@@ -10,11 +10,13 @@ exclude: [
   svg-icons,
   svg-decorations,
   sass,
-  .sass-cache,
-  package.json, 
-  Gruntfile.js, 
-  node_modules, 
-  readme.md
+  package.json,
+  Gruntfile.js,
+  gruntfile.js,
+  node_modules,
+  package.json,
+  readme.md,
+  node_modules
 ]
 
 excerpt_separator: <!--more-->
