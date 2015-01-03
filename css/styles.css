@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Cardo:400,700,400italic|Open+Sans:300italic,400italic,400,700,300);
+@import url('//fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Source+Code+Pro|Montserrat|Open+Sans|Lora|Pinyon+Script');
 /**
 * Imports
 */
@@ -14,11 +14,6 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Cardo', serif;
-font-family: 'Source Code Pro', ;
-*/
 /*
  * Variables
  */
@@ -121,6 +116,21 @@ body {
 
 .text-right {
   text-align: right !important; }
+
+.h-typeface-sans h1, .h-typeface-sans h2, .h-typeface-sans h3, .h-typeface-sans h4, .h-typeface-sans h5, .h-typeface-sans h6 {
+  font-family: 'Open-Sans', Helvetica, Arial, sans-serif; }
+
+.h-typeface-serif h1, .h-typeface-serif h2, .h-typeface-serif h3, .h-typeface-serif h4, .h-typeface-serif h5, .h-typeface-serif h6 {
+  font-family: 'Lora', serif; }
+
+.h-typeface-antique h1, .h-typeface-antique h2, .h-typeface-antique h3, .h-typeface-antique h4, .h-typeface-antique h5, .h-typeface-antique h6 {
+  font-family: 'IM Fell DW Pica', serif; }
+
+.h-typeface-modern h1, .h-typeface-modern h2, .h-typeface-modern h3, .h-typeface-modern h4, .h-typeface-modern h5, .h-typeface-modern h6 {
+  font-family: 'Montserrat', sans-serif; }
+
+.h-typeface-script h1, .h-typeface-script h2, .h-typeface-script h3, .h-typeface-script h4, .h-typeface-script h5, .h-typeface-script h6 {
+  font-family: 'Pinyon Script', cursive; }
 
 .panel-wrap {
   background-color: #fff; }

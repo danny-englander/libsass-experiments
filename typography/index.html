@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 
-  <title>A LibSass experiment with color, design, and photography » Danny Englander</title>
+  <title>A LibSass experiment - Typography » Danny Englander</title>
   <link rel="stylesheet" href="/libsass-experiments/css/normalize.css">
   <link rel="stylesheet" href="/libsass-experiments/css/styles.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -54,38 +54,46 @@
 </header><!-- header -->
 
 
-    <!-- start main -->
+  <!-- start   -->
+<div class="l-main panel-wrap">
+  <div class="primary l-container">
 
-  <div class="l-main panel-wrap">
-    <div class="primary l-container">
-      <header class="header-block">
-      <h1>A project made with LibSass</h1>
-      <h4>Experiments with color, design, and photography in the context of Sass, Grunt, Bourbon, and Neat </h4>
-      </header>
-      <article id="color-grid" class="node">
-        <h2>Color Palette Grid</h2>
-        <div class="l-palettes">
-          <p>A demo of the Sass @each directive loop for theme color palettes using Bourbon and Neat.</p>
-          <ul class="theme-colors">
-            <li class="cp-turquoise"><span>Turquoise</span></li>
-            <li class="cp-purple"><span>Purple</span></li>
-            <li class="cp-orange"><span>Pumpkin Orange</span></li>
-            <li class="cp-green"><span>Olive Green</span></li>
-            <li class="cp-pomegranate"><span>Pomegranate</span></li>
-            <li class="cp-seafoam"><span>Seafoam</span></li>
-            <li class="cp-greengray"><span>Green Gray</span></li>
-            <li class="cp-pink"><span>Pink</span></li>
-            <li class="cp-mustard"><span>Mustard</span></li>
-            <li class="cp-surf-green"><span>Surf Green</span></li>
-            <li class="cp-maillot-jaune dark"><span>Maillot Jaune (dark)</span></li>
-            <li class="cp-caribe dark"><span>Caribe (dark)</span></li>
-            <li class="cp-chartreuse dark"><span>Chartreuse (dark)</span></li>
-          </ul>
+    <article id="color-grid" class="node">
+      <h1>Typography each loops</h1>
+
+      <div class="l-palettes">
+
+        <p>This demonstates generation of typography loops with LibSass. In general loops are working
+        much better now, there's no longer a need to use <code>map-get</code> and map-key.</p>
+
+        <hr/>
+
+        <div class="h-typeface-antique typeface">
+          <h1 class="headings">IM Fell</h1>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
         </div>
-      </article><!-- Featured Artists -->
 
-    </div><!-- primary -->
-  </div><!-- layout -->
+        <div class="h-typeface-modern typeface">
+          <h1 class="headings">Montserrat</h1>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+        </div>
+
+
+
+        <hr/>
+
+
+        <!-- End of Sample Content -->
+
+      </div>
+    </article>
+
+  </div><!-- primary -->
+</div><!-- layout -->
 
 <!-- end  -->
 
