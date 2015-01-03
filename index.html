@@ -1,47 +1,60 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<html lang="en" class="dev">
+
+
 <head>
-  <meta charset="UTF-8">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
   <title>A LibSass experiment with color, design, and photography » Danny Englander</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="favicon.png" sizes="32x32">
+
 </head>
+
 
 <body>
 
   <header>
 
-    <div class="l-header header-wrap">
-      <div class="l-container header">
-        <div class="branding">
-          <a href="index.html">
+  <div class="l-header header-wrap">
+    <div class="l-container header">
+      <div class="branding">
+        <a href="index.html">
           <img src="logo.png" alt="Color Palettes" title="Color Palettes">
-          </a>
-        </div><!-- branding -->
-      </div><!-- layout -->
-    </div><!-- hero -->
+        </a>
+      </div><!-- branding -->
+    </div><!-- layout -->
+  </div><!-- hero -->
 
-    <div class="l-navigation panel">
-      <div class="l-container">
-        <div type="button" class="js-menu-trigger sliding-menu-button">
-          <i class="fa fa-align-justify fa-2x"></i>
-        </div>
-        <nav class="js-menu sliding-menu-content">
-          <ul>
-            <li><a href="https://github.com/danny-englander/libsass-experiments">Github Repo</a></li>
-            <li><a href="index.html">Color Palettes</a></li>
-            <li><a href="typography.html">Typography</a></li>
-          </ul>
-        </nav>
-        <div class="js-menu-screen menu-screen"></div>
-      </div><!-- layout -->
-    </div><!-- navigation -->
+  <div class="l-navigation panel">
+    <div class="l-container">
+      <div type="button" class="js-menu-trigger sliding-menu-button">
+        <i class="fa fa-align-justify fa-2x"></i>
+      </div>
+      <nav class="js-menu sliding-menu-content">
+        <!-- main nav -->
 
-  </header><!-- header -->
+<ul>
+  <li><a href="https://github.com/danny-englander/libsass-experiments">Github Repo</a></li>
+  <li><a href="index.html">Color Palettes</a></li>
+  <li><a href="typography.html">Typography</a></li>
+</ul>
+      </nav>
+      <div class="js-menu-screen menu-screen"></div>
+    </div><!-- layout -->
+  </div><!-- navigation -->
+
+</header><!-- header -->
+
+
+    <!-- start main -->
 
   <div class="l-main panel-wrap">
     <div class="primary l-container">
@@ -73,39 +86,48 @@
     </div><!-- primary -->
   </div><!-- layout -->
 
+<!-- end  -->
+
   <footer>
-    <div class="l-container l-footer">
-      <section class="l-social">
-        <h2>Connect</h2>
-        <ul>
-          <li><a class="twitter" href="https://twitter.com/Danny_Englander"><i class="fa fa-twitter fa-2x"></i></a></li>
-          <li><a class="github" a href="https://github.com/danny-englander"><i class="fa fa-github fa-2x"></i></a></li>
-          <li><a class="drupal" href="https://www.drupal.org/u/danny-englander"><i class="fa fa-drupal fa-2x"></i></a></li>
-          <li><a class="instagram" href="http://instagram.com/dannyenglander11"><i class="fa fa-instagram fa-2x"></i></a></li>
-          <li><a class="gplus" href="https://plus.google.com/+DannyEnglander/posts"><i class="fa fa-google-plus fa-2x"></i></a></li>
-        </ul>
-      </section><!-- l-social -->
+  <div class="l-container l-footer">
+    <section class="l-social">
+      <h2>Connect</h2>
+      <ul>
+        <li><a class="twitter" href="https://twitter.com/Danny_Englander"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a class="github" a href="https://github.com/danny-englander"><i class="fa fa-github fa-2x"></i></a></li>
+        <li><a class="drupal" href="https://www.drupal.org/u/danny-englander"><i class="fa fa-drupal fa-2x"></i></a></li>
+        <li><a class="instagram" href="http://instagram.com/dannyenglander11"><i class="fa fa-instagram fa-2x"></i></a></li>
+        <li><a class="gplus" href="https://plus.google.com/+DannyEnglander/posts"><i class="fa fa-google-plus fa-2x"></i></a></li>
+      </ul>
+    </section><!-- l-social -->
 
-      <div class="l-colophon">
-        <p>This LibSass experiment created by Danny Englander</p>
-        <p>Images licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
-        <p>Code <a href="http://opensource.org/licenses/mit-license.html">licensed under MIT</a></p>
-      </div>
+    <div class="l-colophon">
+      <p>This LibSass experiment created by Danny Englander</p>
+      <p>Images licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+      <p>Code <a href="http://opensource.org/licenses/mit-license.html">licensed under MIT</a></p>
+    </div>
 
-    </div><!-- l-container -->
-  </footer><!-- footer -->
+  </div><!-- l-container -->
+</footer><!-- footer -->
 
-  <script src="js/script.js"></script>
+<script src="/js/script.js"></script>
 
-  <script>
-    // livereload for localhost, we do this otherwise it hangs when on a remote page.
-    if (document.location.hostname == "localhost") {
+<script>
+  // livereload for localhost, we do this otherwise it hangs when on a remote page.
+  if (document.location.hostname == "localhost") {
     document.write('<script src="//'
-  + (location.host || 'localhost').split(':')[0]
-  + ':35729/livereload.js?snipver=1"></'
-  + 'script>')
-    }
-  </script>
+    + (location.host || 'localhost').split(':')[0]
+    + ':35729/livereload.js?snipver=1"></'
+    + 'script>')
+  }
+</script>
 
 </body>
+</html>
+
+
+  <script src="/js/site.min.js"></script>
+
+</body>
+
 </html>
