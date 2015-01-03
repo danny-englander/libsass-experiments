@@ -1,6 +1,7 @@
 name: Danny Englander
 markdown: redcarpet
 baseurl: "/libsass-experiments"
+permalink: pretty
 exclude: [
   .git,
   .gitignore,

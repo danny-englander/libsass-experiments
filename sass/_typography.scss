@@ -193,3 +193,17 @@ a {
 .text-right {
   text-align: right !important;
 }
+
+// Typography loops.
+@each $typevar, $designtype in $typeface {
+  .h-typeface-#{$typevar} {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $designtype;
+    }
+  }
+}

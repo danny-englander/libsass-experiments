@@ -1,9 +1,8 @@
 /* globals module, require */
-
+var timer = require("grunt-timer");
 module.exports = function(grunt) {
-
+  timer.init(grunt);
   "use strict";
-
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
 
@@ -47,8 +46,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-     //   files: ["index.html", "writing.html", "about.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
-        files: ['*.html', "typography.html", 'js/**/*.{js,json}', 'css/*.css', "_layouts/*.html", "_includes/*.html", "_posts/*.md", 'img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+        files: ['*.html', 'js/**/*.{js,json}', 'css/*.css', "_layouts/*.html", "_includes/*.html", "_posts/*.md", 'img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
         tasks: ["shell:jekyllBuild"]
       },
       js: {
@@ -56,7 +54,7 @@ module.exports = function(grunt) {
         tasks: ["uglify", "shell:jekyllBuild"]
       },
       css: {
-        files: ["scss/*.scss"],
+        files: ["sass/*.scss"],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       }
     }
@@ -64,8 +62,6 @@ module.exports = function(grunt) {
   });
 
   require("load-grunt-tasks")(grunt);
-
   grunt.registerTask("serve", ["shell:jekyllServe"]);
   grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
-
 };

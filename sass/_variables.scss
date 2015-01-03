@@ -1,3 +1,5 @@
+@import url('//fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Source+Code+Pro|Montserrat|Open+Sans|Lora|Pinyon+Script');
+
 // Color vars.
 $white: #fff;
 $dark_gray: #333;
@@ -44,17 +46,18 @@ $sliding-menu-border: 1px solid $sliding-menu-border-color;
 $sliding-menu-background-hover: $orange;
 $sliding-menu-color-hover: #fff;
 
-// Base font sizes.
-//$base-font-size: 16px;
-//$base-line-height: 1.5;
+$font_awesome: FontAwesome;
 
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Cardo:400,700,400italic|Open+Sans:300italic,400italic,400,700,300);
+// Font families and default text color.
+$modern: 'Montserrat', sans-serif;
+$font-sans: 'Open-Sans', Helvetica, Arial, sans-serif;
+$font-serif: 'Lora', serif;
+$font-mono: 'Source Code Pro', monospace;
+$antique: 'IM Fell DW Pica', serif;
+$script: 'Pinyon Script', cursive;
 
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Cardo', serif;
-font-family: 'Source Code Pro', ;
-*/
+// Define the typeface loop.
+$typeface: ("sans": $font-sans, "serif": $font-serif, "antique": $antique, "modern": $modern, "script": $script);
 
 /*
  * Variables
