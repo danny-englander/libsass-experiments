@@ -1,0 +1,23 @@
+name: Danny Englander
+markdown: redcarpet
+baseurl: "http://danny-englander.github.io/libsass-experiments"
+exclude: [
+  .git,
+  .gitignore,
+  .DS_Store,
+  assets,
+  CNAME,
+  svg-icons,
+  svg-decorations,
+  sass,
+  package.json,
+  Gruntfile.js,
+  gruntfile.js,
+  node_modules,
+  package.json,
+  readme.md,
+  README.md,
+  node_modules
+]
+
+excerpt_separator: <!--more-->

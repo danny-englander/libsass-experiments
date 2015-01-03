@@ -11,7 +11,8 @@ Although LibSass is not quite up to feature parity yet with Ruby Sass, [it's in 
 
 2. Clone this repo to your local and then run ```npm install```. (Note you may need to preface the command with ```sudo``` depending on your setup.)
 
-3. Run ```grunt``` and ```jekyll serve```, make a few code changes and watch the speed.
+3. Run ```grunt``` and ```jekyll serve```, make a few code changes and watch the speed. To run locally, use ```jekyll serve --watch --baseurl=```
+and then the site will be available at http://localhost:4000/
 
 Your local top-level directory structure should look something like this if all went well with ```npm install```
 
@@ -48,6 +49,6 @@ Here are some ideas that I have for this project going forward.
 
 1. Add favicon and retina touch icons
 2. Add CSS comb, a CSS formatter, or prettifier 
-3. Covert to Jekyll?
+3. <del>Covert to Jekyll?</del>
 4. Add photo gallery
 
